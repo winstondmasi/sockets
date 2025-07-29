@@ -14,10 +14,20 @@ public class Customer implements AutoCloseable {
 
     // Constructor to initialize Customer with a name
     public Customer(String customerName) throws IOException {
+        this(customerName, createDefaultSocket());
+    }
+    
+    // Package-private constructor for testing
+    Customer(String customerName, Socket socket) throws IOException {
         Customer.customerName = customerName;
-        socket = new Socket("localhost", portNumber);
-        readline = new Scanner(socket.getInputStream());
-        writeLine = new PrintWriter(socket.getOutputStream(), true);
+        this.socket = socket;
+        this.readline = new Scanner(socket.getInputStream());
+        this.writeLine = new PrintWriter(socket.getOutputStream(), true);
+    }
+    
+    // Method to create the default socket (can be overridden in tests)
+    private static Socket createDefaultSocket() throws IOException {
+        return new Socket("localhost", 8888);
     }
 
     // Method to place an order

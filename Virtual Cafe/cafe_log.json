@@ -1,16 +1,1 @@
-[{"timestamp": "2023-12-01 13:54:02", "event": "New Client Added", "details": "Total Clients: 1"}
-,
-{"timestamp": "2023-12-01 13:54:06", "event": "Order Moved to Brewing", "details": "Order ID 1, Customer: Wisnton, Beverage: tea"}
-,
-{"timestamp": "2023-12-01 13:54:06", "event": "New Order Placed", "details": "OrderID: 1, Customer: Wisnton, Beverage: teas"}
-,
-{"timestamp": "2023-12-01 13:54:06", "event": "Order Delivered", "details": "Orders for Wisnton have been delivered: "}
-,
-{"timestamp": "2023-12-01 13:54:36", "event": "Order Moved to Tray", "details": "Order ID 1, Customer: Wisnton, Beverage: teas"}
-,
-{"timestamp": "2023-12-01 13:54:36", "event": "Order Delivered", "details": "Orders for Wisnton have been delivered: 1 teas(s)"}
-,
-{"timestamp": "2023-12-01 13:55:49", "event": "Orders Removed", "details": "Customer: Wisnton left, Orders Removed"}
-,
-{"timestamp": "2023-12-01 13:55:49", "event": "Client Removed", "details": "Total Clients: 0"}
-]
+[]
